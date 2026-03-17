@@ -1,0 +1,5 @@
+{
+        "editor.inlineSuggest.experimental.emptyResponseInformation": false,
+        "editor.inlineSuggest.edits.showLongDistanceHint": false,
+        "workbench.tree.indent": 4
+}
