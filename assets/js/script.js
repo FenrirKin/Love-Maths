@@ -88,8 +88,9 @@ function calculateCorrectAnswer() {
                 return [operand1 * operand2, "multiplication"];
         } else if (operator === "-") {
                 return [operand1 - operand2, "subtraction"];
-        }
-        else {
+        } else if (operator === "/") {
+                return [operand1 / operand2, "division"];
+        } else {
                 alert(`Unimplemented operator ${operator}`);
                 throw `Unimplemented operator ${operator}. Aborting!`;
         }
@@ -134,6 +135,10 @@ function displayMultiplyQuestion(operand1, operand2) {
 
 }
 
-function displayDivideQuestion() {
+function displayDivideQuestion(operand1, operand2) {
+        operand1 = operand1 * operand2;
+        document.getElementById("operand1").textContent = operand1;
+        document.getElementById("operand2").textContent = operand2;
+        document.getElementById(`operator`).textContent = "/";
 
 }
